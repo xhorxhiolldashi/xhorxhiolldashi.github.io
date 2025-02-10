@@ -4,3 +4,17 @@ article {
     color: #333
 }
 
+article.featured {
+    background-color: #FFD54F;
+    font-weight: bold;
+    border: 2px solid #FFA000;
+}
+
+article p{
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.featured:hover{
+    background-color: #FFB300;
+}
