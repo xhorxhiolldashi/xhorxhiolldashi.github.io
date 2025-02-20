@@ -1,0 +1,30 @@
+
+
+.blue-box {
+    display: flex;
+    justify-content: center;
+    margin:25px;
+    
+    font-size: 32px;
+    color: rgb(18, 36, 114);
+
+    background-color: #97cfe0;
+    border-style: solid;
+    border-color: rgb(50, 83, 160);
+}
+
+.blue-box > p {
+    font-size: 24px;
+}
+
+.mouse-over:hover {
+font-size: 48px;
+
+}
+
+.button-blue {
+    background-color: #70b6cc;
+    border-style: solid;
+    border-color: rgb(37, 66, 135);
+
+}
