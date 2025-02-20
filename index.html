@@ -4,19 +4,93 @@
         <meta charset="UTF-8">
         <meta name="viewport" content = "width=device-width, initial-scale=1.0">
         <title>Xhorxhi Olldashi</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="common_style.css">
+
+
+        <!--homepage-specific styles-->
+        <style>
+
+            .list-container {
+                display:flex;
+                justify-content: space-evenly; 
+                
+            }
+
+            .list-item {
+                display:flex;
+                justify-content: center;
+                align-items: center;
+
+                background-color: #97cfe0;
+                color: rgb(18, 36, 114);
+                border-style: solid;
+                border-color: rgb(50, 83, 160);
+                padding:8px;
+            }
+
+            .boxes {
+                display:flex;
+                justify-content: space-evenly;
+
+                background-color: #97cfe0;
+                color: rgb(18, 36, 114);
+                border-style: solid;
+                border-color: rgb(50, 83, 160);
+                padding:8px;
+            }
+
+            .boxes-item {
+                display:flex;
+                justify-content: center;
+                
+                background-color: #97cfe0;
+                color: rgb(18, 36, 114);
+                border-style: solid;
+                border-color: rgb(50, 83, 160);
+                padding:8px;
+            }
+
+            
+        </style>
+        
     </head>
+
     <body>
+        <!--top header-->
+            <header class = "blue-box">Xhorxhi's Website</header>
+        
 
-        <article>
-            <h2>Hello.</h2>
-            <p>Welcome to the webpage.</p>
-        </article>
+        <!--body element one, general info-->
+        <section class = "blue-box">
+            <p>This is my website. It is a work in progress as I learn more web development.
+                <br>You will find many <strong class = "mouse-over" >big</strong> projects someday.</p>
+        </section>
 
-        <article class = "featured">
-            <h2>letter.html</h2>
-            <a href = "/Letter.html"> go to letter</a>
-        </article>
+        <!--an image-->
+        <img src = "png-of-me.png" alt = "Drawing of me" style = "display:block; margin-left: auto; margin-right: auto;
+            width: 279px; height: 256px;">
+
+        <!--body element two, headings for tables-->
+        <section class = "list-container">
+            <h1 class = "list-item" >My GitHub Page:</h1>
+            <h1 class = "list-item" >CSIS390 Work:</h1>
+            <h1 class = "list-item"> Misc./TBD?:</h1>
+        </section>
+
+        <!--body element three, contain three separate boxes spaced-evenly containing information-->
+        <section class = "list-container">
+
+                <div class = "boxes-item">
+                    <a href="https://github.com/xhorxhiolldashi/" class = "button-blue">GitHub</a>
+                </div>
+                
+                <div class = "boxes-item">
+                    <a href = "/Letter.html" class = "button-blue">Letter practice mockup</a>
+                </div>
+
+                <div class = "boxes-item">tbd!</div>
+
+        </section>
         
     </body>
 </html>
