@@ -1,4 +1,8 @@
 
+.nav {
+    display: flex;
+    
+}
 
 .blue-box {
     display: flex;
