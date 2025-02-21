@@ -27,6 +27,14 @@ nav ul li {
     padding: 0 30px;
 }
 
+nav ul li:hover {
+    font-size:30px;
+    background-color: rgb(255, 192, 239);
+}
+
+strong {
+   font-size: 25px; 
+}
 .list-container {
     display:flex;
     justify-content: space-evenly;
@@ -98,3 +106,44 @@ font-size: 48px;
     border-color: rgb(37, 66, 135);
 
 }
+
+#button{
+    background-color:#00aadd;
+    animation: anim 5s infinite;
+}
+
+@keyframes anim {
+    0% {
+        background-color: blue;
+    }
+    50% {
+        background-color: yellow;
+    }
+    100% {
+        background-color: blue;
+    }
+}
+
+
+button:hover{
+background-color:#0484aa;
+}
+
+footer {
+    position:absolute;
+    bottom: 10px;
+    left: 10px;
+
+    border: dotted;
+    background-color:rgb(151, 207, 224);
+
+    max-width:15vw;
+
+
+}
+
+#blog-nav {
+    display: flex;
+    flex-direction: column;
+}
+
