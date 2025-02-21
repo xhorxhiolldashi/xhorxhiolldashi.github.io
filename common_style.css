@@ -17,6 +17,21 @@ left: 0px;
     
 }
 
+img{
+    border: dotted;
+    border-color: darkblue;
+}
+
+a {
+    border: solid;
+    border-color: rgb(6, 5, 51);
+
+}
+
+h1 {
+    color: cadetblue;
+}
+
 
 nav ul {
     display: flex;
@@ -34,7 +49,7 @@ nav ul li {
 
 nav ul li:hover {
     font-size:30px;
-    background-color: rgb(255, 192, 239);
+    background-color: rgba(105, 165, 255, 0.613);
 }
 
 strong {
