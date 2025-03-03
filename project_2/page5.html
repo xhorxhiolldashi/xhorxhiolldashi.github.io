@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Journey Continues</title>
+    <!-- TODO: Import your CSS File here -->
+    <link rel = "stylesheet" href = "style.css">
+    
+</head>
+<body>
+    <section class="container">
+        <h1>The Journey Continues</h1>
+        <p>With the guardian's riddle behind you, the path forward splits into three. Each route is known to favor certain traits: strength, wisdom, or stealth. Choose your path wisely, as it will influence the challenges you face ahead.</p>
+        <!-- Your Form -->
+        <form id = "pathForm" method ="GET" action = "/page6.html"> 
+
+            <label for = "path" >Choose your path:</label>
+
+            <select id = "pathChoice" name = "pathChoice" required>
+                <option>--Please choose an option--</option>
+                <option value = "strength">Route of strength.</option>
+                <option value = "wisdom">Route of wisdom.</option>
+                <option value = "stealth">Route of stealth.</option>
+
+            </select>
+
+            <!--Continue button-->
+            <input type = "submit" id = "continueButton" value = "Continue on Your Journey">
+
+        <p>Your choice will not only test your abilities but also reveal deeper truths about your character.</p>
+    </section>
+
+
+    <script>
+        let body = document.querySelector('body');
+        let path = document.getElementById('pathChoice');
+        let form = document.getElementById('pathForm');
+
+
+        path.addEventListener('change', (event) => {
+            let val = path.value;
+
+            if(val === "strength"){
+                body.style.backgroundColor = "Red";
+            }
+            if(val === "wisdom"){
+                body.style.backgroundColor = "Blue";
+            }
+            if(val === "stealth"){
+                form.action = "/page5b.html";
+                body.style.backgroundColor = "Green";
+            }
+        })
+        
+    </script>
+</body>
+</html>

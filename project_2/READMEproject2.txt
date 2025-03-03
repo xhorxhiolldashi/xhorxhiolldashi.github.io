@@ -1,0 +1,2 @@
+This is project 2 of CSIS390, my Web App Development lab. It's like an RPG game made in HTML using JS. Following along using
+https://nchaudhari.notion.site/Project-2-Quest-into-the-Wilderness-Navigating-the-DOMain-395bbaf7344c4c2eaf588ee154c227c5.
