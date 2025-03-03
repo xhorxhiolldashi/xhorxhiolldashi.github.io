@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Selection</title>
+    <!-- TODO: Import your CSS File here -->
+    <link rel = "stylesheet" href = "style.css">
+    
+</head>
+<body>
+    
+    <div class = "container">
+    <h1>Choose Your Character</h1>
+    <form id = "characterForm" method="GET" action = "/page3.html">
+        
+
+        <fieldset>
+            <legend>Choose Your Character</legend>
+            <!--Aria-->
+        <div class = "character">
+            <input type = "radio" id = "aria" name = "character" value = "A">
+            <label for = "aria"><Strong>Aria, the Warrior: </Strong>Strong and Brave, with 
+            the ability to overcome physical obstacles.</label><br>
+        </div>
+            <!--Eldrin-->
+        <div class = "character">
+            <input type = "radio" id = "eldrin" name = "character"  value = "E">
+            <label for = "eldrin"><Strong>Eldrin, the Mage: </Strong>Wise and knowledgeable, with 
+            the power to solve puzzles and cast spells.</label><br>
+        </div>
+            <!--Tara-->
+        <div class = "character">
+            <input type = "radio" id = "tara" name = "character"  value = "T">
+            <label for = "tara"><Strong>Tara, the Rogue: </Strong>Quick and cunning, with 
+                skills in stealth and persuasion.</label><br>
+        </div>
+
+            
+            
+        </fieldset>
+        <!--Submit-->
+        <input type = "submit" value = "Continue">
+    </form>
+</div>
+        
+    
+</body>
+</html>

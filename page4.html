@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The First Obstacle</title>
+    <!-- TODO: Import your CSS File here -->
+    <link rel = "stylesheet" href = "style.css">
+    
+</head>
+<body>
+    <section class="container">
+
+        <h1>The First Obstacle</h1>
+        <p>As you venture deeper into the Dark Forest, you encounter a mystical guardian. 
+            The guardian blocks your path and poses a riddle:</p>
+            
+        <q>I speak without a mouth and hear without ears. I have no body, but I come alive with wind. What am I?</q>
+
+        <form id = "riddleForm" method ="GET" action = "/page5.html"> 
+
+            <label for = "riddleAnswer">Your Answer:</label>
+            <input type="text" id="riddleAnswer" name="riddle_answer" placeholder="echo" required>
+            
+
+            <!--Submit Answer-->
+            <input type = "submit" id = "submitButton" value = "Submit Answer" style = "color:white ; background-color: red">
+
+            <p>Think carefully, for the correct answer will allow you passage.</p>
+
+        </form>
+
+    </section>
+
+    <script>
+       let riddleAnswer = document.getElementById("riddleAnswer");
+       let button = document.getElementById("submitButton");
+       let correctAnswer = "echo";
+
+       function func(correctAnswer, riddleAnswer){
+        if(correctAnswer === riddleAnswer){
+            button.style.backgroundColor = "green";
+        }
+
+       }
+
+       riddleAnswer.addEventListener('input', function(){
+        func(correctAnswer, riddleAnswer.value);
+       });
+
+
+
+    </script>
+
+</body>
+</html>

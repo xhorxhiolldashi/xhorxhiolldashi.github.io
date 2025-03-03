@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Path of Stealth</title>
+    <!-- TODO: Import your CSS File here -->
+    <link rel = "stylesheet" href = "style.css">
+    
+</head>
+<body>
+    <section class="container">
+        
+        <h1>The Path of Stealth</h1>
+        <p>To successfully navigate the Path of Stealth, you must choose your actions carefully. Select the correct 
+            sequence of actions to avoid detection and reach your objective.</p>
+
+        <!-- Actions -->
+        <div  class="stealth-option">Hide in the shadows</div>
+        <div  class="stealth-option">Run quickly to the next cover</div>
+        <div  class="stealth-option">Create a distraction</div>
+        <div  class="stealth-option">Wait for the right moment</div>
+
+        <!-- Buttons -->
+        <button onclick="checkSequence()">Check Sequence</button>
+        <button onclick="reset()">Reset!</button>
+
+        <script>
+        const correctSequence = ['hide', 'wait', 'distract'];
+        // Your Code here
+        
+        let userSequence = [];
+
+        let buttons = document.getElementsByTagName('div');
+
+        for(let button of buttons){
+            button.addEventListener('click', function(){
+                button.style.backgroundColor = "Green";
+
+                //if the buttons other than distract are pressed get the
+                //first word and push it to the userSequence. If Create
+                //a distraction is selected then push distract into the array
+                if(button.textContent !== "Create a distraction"){
+                let str = button.textContent;
+                let strArr = str.split(" ");
+                str = strArr[0];
+                str = str.toLowerCase();
+                console.log("str: " + str);
+                selectAction(str);
+                } else {
+                selectAction("distract");
+                }
+            });
+        }
+
+        
+
+
+        function selectAction(action){
+            console.log(action + " selected");
+            userSequence.push(action);
+        }
+
+        function checkSequence(){
+            if(userSequence.length !== correctSequence.length){
+                alert("You might have messed up somewhere along the way.");
+                return;
+            }
+            for(let i = 0; i < userSequence.length; i++){
+                if(userSequence[i] !== correctSequence[i]){
+                    alert("You might have messed up somewhere along the way.");
+                    return;
+                }
+            }
+                alert("You did it!");
+                window.location.replace("/page6.html");
+            
+            
+        }
+
+        function reset(){
+            console.log("Choices reset");
+            location.reload();
+            userSequence = [];
+        }
+
+        </script>
+    </section>
+</body>
+</html>

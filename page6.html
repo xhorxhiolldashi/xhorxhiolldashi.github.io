@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Final Showdown</title>
+    <!-- TODO: Import your CSS File here -->
+    <link rel = "stylesheet" href = "style.css">
+    
+</head>
+<body>
+    <h1>The Final Showdown</h1>
+    <p>After a long journey filled with trials and challenges, you finally stand before Malakar's lair. The dark sorcerer awaits, the Crystal of Wisdom in his grasp. It's time to make your move.</p>
+    <!-- Your Code -->
+
+     <!--Confrontation-->
+    <div class = "container"> 
+        <form id = "malakarForm"> 
+            <fieldset>
+                <legend>How will you confront Malakar?</legend>
+            <label for = "path" >Choose wisely:</label>
+            <select id = "pathChoice" name = "pathChoice" required>
+                <option>--Please choose an option--</option>
+                <option>Wait, why did you click?</option>
+            </select>
+        </fieldset>
+    </div>
+
+    <!--Character Information-->
+    <div class = "container"> 
+        <form id = "characterForm"> 
+            <fieldset>
+                <legend>Character Information</legend>
+
+<!-- Name Selection-->
+
+<div>
+    <fieldset>
+        <legend>The Brave</legend>
+        <form id = "nameForm"> 
+            <label for = "riddleAnswer">Your Name:</label>
+            <input type="text">
+
+        </form>
+    </fieldset>
+</div>
+<!--Weapon Selection-->
+<div>
+            <form id = "weaponForm">
+
+                <fieldset>
+                    <legend>Select Your Weapon:</legend>
+                <div class = "weapons">
+                    <input type = "radio" id = "sword" name = "weapon">
+                    <label for = "sword">Sword</label>
+                    <input type = "radio" id = "bow" name = "weapon">
+                    <label for = "sword">Bow</label>
+                    <input type = "radio" id = "staff" name = "weapon">
+                    <label for = "sword">Staff</label>
+        
+                </fieldset>
+                
+            </form>
+    
+</div>
+
+<!--Armor selection-->
+<div>
+    <form id = "armorForm">
+        <fieldset>
+            <legend>Select Your Armor:</legend>
+
+            <div>
+        <input type = "checkbox" id = "plate" name = "armor">
+        <label for = "plate">Plate Armor</label>
+
+        <input type = "checkbox" id = "leather" name = "armor">
+        <label for = "leather">Leather Armor</label>
+
+        <input type = "checkbox" id = "cloak" name = "armor">
+        <label for = "cloak">Cloak</label>
+            </div>
+        
+        </fieldset>
+    </form>
+</div>
+
+<!--Message-->
+<div>
+    <label for = "malakar">Leave a Message for Malakar:</label>
+    <section >
+        
+            <input type="text" style = "padding: 80px;">
+    </section>
+</div>
+
+        </fieldset>
+    </div>
+<a href = "/conclusion.html">
+<button>Face Malakar</button>
+</a>
+    <p><strong>Your choice here will determine the fate of the kingdom. Choose wisely.</strong></p>
+
+
+    
+</body>
+</html>
