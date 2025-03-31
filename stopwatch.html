@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+</head>
+
+<body>
+    <p id="seconds">0</p>
+
+    <input type="submit" id="start" value="Start">
+    <input type ="submit" id="stop" value="Stop">
+
+</body>
+
+<script>
+    let startButton = document.getElementById("start");
+    let stopButton = document.getElementById("stop");
+    let stopwatch = document.getElementById("seconds");
+
+
+    let count = 0;
+
+    let timerID;
+
+
+    function theTimer() {
+        count = count + 1;
+        stopwatch.textContent = count;
+
+    }
+
+    function stopTimer(variable){
+        clearTimeout(variable);
+    }
+
+
+    startButton.addEventListener('click', () => {
+        
+        if(timerID == undefined){
+        timerID = setInterval(theTimer, 1000)
+        }
+    });
+
+    stopButton.addEventListener('click', () => {
+        stopTimer(timerID)
+    });
+
+    
+
+
+
+</script>
+
+
+
+</html>

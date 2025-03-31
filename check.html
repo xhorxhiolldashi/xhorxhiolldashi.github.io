@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Check</title>
+</head>
+
+<body>
+<main class="container">
+    <h1>Add Check</h1>
+
+    <form id="checkForm" class="mb-3">
+    
+    <div id="name">
+        <label for="name" class="form-label">Name:</label>
+        <input type="text" class="form-control" id="name" placeholder="Name" minlength = "5" required>
+        
+    </div>
+
+    <div id="dateContainer">
+        <label for="date" class="form-label">Date:</label>
+        <input type="date" class="form-control" id="date" placeholder="Date" required>
+        <span id="dateError" class="error"></span>
+    </div>
+
+    <div id="amount">
+        <label for="amt" class="form-label">Amount:</label>
+        <input type="number" class="form-control" id="amt" placeholder="Amount" min = "1" required>
+        
+    </div>
+
+    <div id="bank">
+        <label for="bank" class="form-label">Bank:</label>
+        <input type="text" class="form-control" id="bank" placeholder="Bank" minlength = "5" required>
+        
+    </div>
+    
+    <div id="account">
+        <label for="acc" class="form-label">Account:</label>
+        <input type="text" class="form-control" id="acc" placeholder="Account" pattern = "^\d{10}$" required>
+        
+    </div>
+
+    <button type="submit" style="margin-top:10px" class="btn btn-primary">Submit</button>
+
+    </form>
+
+    <script src="check.js" defer></script>
+
+</main>
+</body>
+</html>
