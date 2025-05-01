@@ -30,28 +30,11 @@ Rattata
 Rattata-Alola
 Raticate
 Raticate-Alola
-Raticate-Alola-Totem
 Spearow
 Fearow
 Ekans
 Arbok
 Pikachu
-Pikachu-Cosplay
-Pikachu-Rock-Star
-Pikachu-Belle
-Pikachu-Pop-Star
-Pikachu-PhD
-Pikachu-Libre
-Pikachu-Original
-Pikachu-Hoenn
-Pikachu-Sinnoh
-Pikachu-Unova
-Pikachu-Kalos
-Pikachu-Alola
-Pikachu-Partner
-Pikachu-Starter
-Pikachu-Gmax
-Pikachu-World
 Raichu
 Raichu-Alola
 Sandshrew
@@ -132,8 +115,8 @@ Slowbro-Mega
 Slowbro-Galar
 Magnemite
 Magneton
-Farfetch\u2019d
-Farfetch\u2019d-Galar
+Farfetchd
+Farfetchd-Galar
 Doduo
 Dodrio
 Seel
@@ -165,7 +148,6 @@ Exeggutor-Alola
 Cubone
 Marowak
 Marowak-Alola
-Marowak-Alola-Totem
 Hitmonlee
 Hitmonchan
 Lickitung
@@ -184,8 +166,8 @@ Goldeen
 Seaking
 Staryu
 Starmie
-Mr. Mime
-Mr. Mime-Galar
+Mr.-Mime
+Mr.-Mime-Galar
 Scyther
 Jynx
 Electabuzz
@@ -564,7 +546,7 @@ Skuntank
 Bronzor
 Bronzong
 Bonsly
-Mime Jr.
+Mime-Jr.
 Happiny
 Chatot
 Spiritomb
@@ -854,7 +836,7 @@ Vivillon-Fancy
 Vivillon-Pokeball
 Litleo
 Pyroar
-Flabe\u0301be\u0301
+Flabebe
 Floette
 Floette-Eternal
 Florges
@@ -939,11 +921,9 @@ Trumbeak
 Toucannon
 Yungoos
 Gumshoos
-Gumshoos-Totem
 Grubbin
 Charjabug
 Vikavolt
-Vikavolt-Totem
 Crabrawler
 Crabominable
 Oricorio
@@ -952,7 +932,6 @@ Oricorio-Pa'u
 Oricorio-Sensu
 Cutiefly
 Ribombee
-Ribombee-Totem
 Rockruff
 Rockruff-Dusk
 Lycanroc
@@ -966,15 +945,12 @@ Mudbray
 Mudsdale
 Dewpider
 Araquanid
-Araquanid-Totem
 Fomantis
 Lurantis
-Lurantis-Totem
 Morelull
 Shiinotic
 Salandit
 Salazzle
-Salazzle-Totem
 Stufful
 Bewear
 Bounsweet
@@ -988,46 +964,24 @@ Golisopod
 Sandygast
 Palossand
 Pyukumuku
-Type: Null
+Type-Null
 Silvally
-Silvally-Bug
-Silvally-Dark
-Silvally-Dragon
-Silvally-Electric
-Silvally-Fairy
-Silvally-Fighting
-Silvally-Fire
-Silvally-Flying
-Silvally-Ghost
-Silvally-Grass
-Silvally-Ground
-Silvally-Ice
-Silvally-Poison
-Silvally-Psychic
-Silvally-Rock
-Silvally-Steel
-Silvally-Water
 Minior
 Minior-Meteor
 Komala
 Turtonator
 Togedemaru
-Togedemaru-Totem
 Mimikyu
-Mimikyu-Busted
-Mimikyu-Totem
-Mimikyu-Busted-Totem
 Bruxish
 Drampa
 Dhelmise
 Jangmo-o
 Hakamo-o
 Kommo-o
-Kommo-o-Totem
-Tapu Koko
-Tapu Lele
-Tapu Bulu
-Tapu Fini
+Tapu-Koko
+Tapu-Lele
+Tapu-Bulu
+Tapu-Fini
 Cosmog
 Cosmoem
 Solgaleo
@@ -1040,11 +994,7 @@ Celesteela
 Kartana
 Guzzlord
 Necrozma
-Necrozma-Dusk-Mane
-Necrozma-Dawn-Wings
-Necrozma-Ultra
 Magearna
-Magearna-Original
 Marshadow
 Poipole
 Naganadel
@@ -1129,8 +1079,8 @@ Grimmsnarl-Gmax
 Obstagoon
 Perrserker
 Cursola
-Sirfetch\u2019d
-Mr. Rime
+Sirfetchd
+Mr-Rime
 Runerigus
 Milcery
 Alcremie
@@ -1140,11 +1090,10 @@ Pincurchin
 Snom
 Frosmoth
 Stonjourner
-Eiscue
-Eiscue-Noice
+Eiscue-noice
 Indeedee
 Indeedee-F
-Morpeko
+Morpeko-Full-Belly
 Morpeko-Hangry
 Cufant
 Copperajah
@@ -1273,18 +1222,18 @@ Farigiraf
 Dudunsparce
 Dudunsparce-Three-Segment
 Kingambit
-Great Tusk
-Scream Tail
-Brute Bonnet
-Flutter Mane
-Slither Wing
-Sandy Shocks
-Iron Treads
-Iron Bundle
-Iron Hands
-Iron Jugulis
-Iron Moth
-Iron Thorns
+Great-Tusk
+Scream-Tail
+Brute-Bonnet
+Flutter-Mane
+Slither-Wing
+Sandy-Shocks
+Iron-Treads
+Iron-Bundle
+Iron-Hands
+Iron-Jugulis
+Iron-Moth
+Iron-Thorns
 Frigibax
 Arctibax
 Baxcalibur
@@ -1295,12 +1244,12 @@ Wo-Chien
 Chien-Pao
 Ting-Lu
 Chi-Yu
-Roaring Moon
-Iron Valiant
+Roaring-Moon
+Iron-Valiant
 Koraidon
 Miraidon
-Walking Wake
-Iron Leaves
+Walking-Wake
+Iron-Leaves
 Dipplin
 Poltchageist
 Poltchageist-Artisan
@@ -1319,10 +1268,10 @@ Ogerpon-Hearthflame-Tera
 Ogerpon-Cornerstone-Tera
 Archaludon
 Hydrapple
-Gouging Fire
-Raging Bolt
-Iron Boulder
-Iron Crown
+Gouging-Fire
+Raging-Bolt
+Iron-Boulder
+Iron-Crown
 Terapagos
 Terapagos-Terastal
 Terapagos-Stellar
