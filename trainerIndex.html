@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV Trainer</title>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <!-- Select2 Imports-->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- ensure DOM is loaded, for Select2 -->
+    <script> 
+        $(document).ready(function(){
+            $('#monDropdown').select2();
+            $('#battleDropdown').select2();
+        });
+    </script>
+
+    <script src = "builder.js" defer></script>
+
+</head>
+<body>
+
+
+    <!-- RENAME ME TO BUILDER -->
+
+<!-- Header -->
+
+<div class="d-flex flex-column justify-content-center align-items-center text-center">
+ <section id = "titleEV" class="mb-4">
+    <p> EV Trainer </p>
+    <p id = "tut"> For a brief tutorial on the tool and/or an explanation of EVs, 
+        click <a href = "/tutorial">here</a>.</p>
+    </section>
+    
+    <!-- This section will be in the center. This section will be 
+     replaced once the dropdown or save button is fulfilled by another 
+     section containing the pokemon and its stats and stuff -->
+    <section id = "loadupWindow">
+        <p> Choose a Pokemon from the dropdown to start.</p>
+    
+        <!-- Dropdown for selecting pokemon -->
+        <select name= "monDropdown" id = "monDropdown" class="form-select mb-3" style = "width: 50vw">
+            <option id = "placeholder" value = "default">--Please choose a Pokemon--</option>
+        </select>
+
+        <div>
+        <input type = "button" value = "Let's Build" id = "letsBuild" name = "letsBuild" class = "btn btn-primary rounded">
+        <!--
+        <input type = "button" value = "Load Saved Pokemon" id = "loadSaved" name = "loadSavedButton" class="btn btn-secondary rounded">
+        -->
+        </div>
+    
+   
+    </section>
+</div>
+
+    <section id = "evChart" style = "display: none;">
+        <canvas id="evs" ></canvas>
+    </section>
+
+    <div></div>
+    <!-- section displaying pokemon name and its stats-->
+    <section id = "evWindow" style = "display:none">
+        <div id = "evChartAndMons">
+        <!-- name -->
+        <p id = "replaceWithMon" class="p-2">PLACEHOLDER</p>
+        <!-- stats to display -->
+         <!-- no stats rn -->
+         <!-- sprite -->
+        <img id = "replaceWithSprite">
+        </div>
+    </section>
+
+
+ 
+    <!-- This section will always be right under the loadup window and 
+     the pokemon window-->
+    
+    <!-- Buttons for choosing what EV we are focusing on right now -->
+    
+    <!-- When an option is clicked, replace the entire button set with
+     a "Go Back" button so they can go and train something else-->
+     
+                                    <!-- display none hides this entire section
+                                    will be updated with js when a mon is chosen-->
+    <section id = "trainOptionButtons" style = "display: none">
+        <p id = "whatTrain" class = "text-center"> What will you train? </p>
+        <div class="d-flex justify-content-center">
+    
+    <input type = "button" value = "Health EVs" id = "chooseHealth" class = "btn-secondary rounded" name = "chooseHealthButton">
+    <input type = "button" value = "Attack EVs" id = "chooseAtk" class = "btn-secondary rounded" name = "chooseAtkButton">
+    <input type = "button" value = "Defense EVs" id = "chooseDef" class = "btn-secondary rounded" name = "chooseDefButton">
+    <input type = "button" value = "Special Attack EVs" id = "chooseSpa" class = "btn-secondary rounded" name = "chooseSpaButton">
+    <input type = "button" value = "Special Defense EVs" id = "chooseSpDef" class = "btn-secondary rounded" name = "chooseSpDefButton">
+    <input type = "button" value = "Speed EVs" id = "chooseSpe" class = "btn-secondary rounded" name = "chooseSpeButton">
+        </div>
+    </section>
+
+    <!-- Effort tables-->
+     <div id = "evContainer" style = "display: none;" class="container mt-5">
+    <p id = "evTableHeader"><strong>Item Training</strong></p>
+    <table id = "evTable">
+      <thead>
+        <tr>
+          <th scope="col" class="col-md-3 text-center" id = "berryCol">Feed RESPECTIVE_BERRY (-10 EVs)</th>
+          <th scope="col" class="col-md-3 text-center" id = "featherCol">Use RESPECTIVE_FEATHER (+1 EVs)</th>
+          <th scope="col" class="col-md-3 text-center" id = "vitaminCol">Use RESPECTIVE_VITAMIN (+10 EVs)</th>
+          <th scope="col" class="col-md-3 text-center" id = "powerItemCol">Equip RESPECTIVE_POWER_ITEM (+8 EVs in Battle)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td>
+              <input type = "button" id = "feedBerryButton" value = "Feed Berry" class = "btn-secondary rounded col text-center">
+            </td>
+            <td>
+                <input type = "button" id = "useFeatherButton" value = "Use Feather" class = "btn-secondary rounded col text-center">
+            </td>
+            <td>
+                <input type = "button" id = "useVitaminButton" value = "Use Vitamin" class = "btn-secondary rounded col text-center">
+            </td>
+            <td>
+                <input type = "button" id = "equipToggle" class = "btn-primary rounded col text-center" value = "Equip Power Item">
+            </td>
+          </tr>
+      </tbody>
+    </table>
+    </div>
+    
+    <div id = "battleContainer" style = "display: none;" class="container mt-5">
+    <!-- dropdown to select who to add to the battle table here-->
+    <!-- Battle table-->
+    <p><strong>Battle Training</strong></p>
+    <table id = "battleTable" style = "display: none; justify-content: center;">
+      <tbody>
+        <div class="d-flex justify-content-center">
+        <select name= "battleDropdown" id = "battleDropdown" style = "width: 50vw" class = >
+            <option id = "placeholder2" value = "default">--Choose Opponent's EV Yield--</option>
+            <option id = "yield3" value = "3">3 EVs</option>
+            <option id = "yield2" value = "2">2 EVs</option>
+            <option id = "yield1" value = "1">1 EVs</option>
+        </select>
+        <input type = "button" id = "knockoutButton" value = "Defeat!" class = "btn-primary rounded">
+    </div>
+        
+      </tbody>
+    </table>
+    </div>
+
+    <input type = "button" value = "Go Back to EV Selection" style = "display:none" id = "goBack" name = "backButton" class = "btn-secondary rounded">
+
+
+</body>
+</html>
+
+
+
